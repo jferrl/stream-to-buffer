@@ -11,7 +11,11 @@
     "build": "tsc",
     "test": "mocha --reporter spec"
   },
-  "keywords": ["typescript", "node", "streaming"],
+  "keywords": [
+    "typescript",
+    "node",
+    "streaming"
+  ],
   "author": "Jorge Ferrero Linacero <jorgeferrerolinacero@gmail.com | jorge.ferreero.linacero@hp.com>",
   "license": "MIT",
   "repository": {
