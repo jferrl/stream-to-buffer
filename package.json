@@ -9,9 +9,13 @@
   },
   "scripts": {
     "build": "tsc",
-    "test": "mocha --reporter spec"
+    "cover": "istanbul cover node_modules/mocha/bin/_mocha test/*.js - - -R spec"
   },
-  "keywords": ["typescript", "node", "streaming"],
+  "keywords": [
+    "typescript",
+    "node",
+    "streaming"
+  ],
   "author": "Jorge Ferrero Linacero <jorgeferrerolinacero@gmail.com | jorge.ferreero.linacero@hp.com>",
   "license": "MIT",
   "repository": {
@@ -25,6 +29,8 @@
   "devDependencies": {
     "@types/node": "^10.12.10",
     "chai": "^4.2.0",
+    "coveralls": "^3.0.2",
+    "istanbul": "^0.4.5",
     "mocha": "^5.2.0",
     "typescript": "^3.1.6"
   },
