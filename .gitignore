@@ -2,3 +2,4 @@ node_modules
 dist
 undefined/**/*
 package-lock.json
+coverage
