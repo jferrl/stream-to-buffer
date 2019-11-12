@@ -1,6 +1,7 @@
+# StreamToBuffer
 [![Build Status](https://travis-ci.org/jferrl/stream-to-buffer.svg?branch=master)](https://travis-ci.org/jferrl/stream-to-buffer)
 [![Coverage Status](https://coveralls.io/repos/github/jferrl/stream-to-buffer/badge.svg?branch=master)](https://coveralls.io/github/jferrl/stream-to-buffer?branch=master)
-# StreamToBuffer
+
 A promise based Node.js module that converts a node.js ReadStream to buffer
 ## Installation 
 ```sh
