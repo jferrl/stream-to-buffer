@@ -12,7 +12,7 @@ import { Readable } from "stream";
 export function streamToBuffer(readStream: ReadStream): Promise<Buffer> {
 
     if (!readStream || readStream instanceof Readable === false) {
-        throw new Error("ReadStream must be a valid instace");
+        throw new Error("ReadStream must be a valid instance");
     }
 
     return new Promise<Buffer>((resolve, reject) => {
