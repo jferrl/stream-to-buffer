@@ -15,14 +15,18 @@ before_script:
     - ./cc-test-reporter before-build
 script:
     - npm run test
+    - npm run build
 after_script:
     - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 
-before_deploy:
-    - npm run build
 deploy:
     provider: npm
     email: $NPM_EMAIL
     api_key: $NPM_API_TOKEN
     on:
         branch: master
+
+notifications:
+    email:
+        on_success: always
+        on_failure: always
