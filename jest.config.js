@@ -12,5 +12,5 @@ module.exports = {
     testEnvironment: 'node',
     collectCoverage: true,
     coverageReporters: ['lcov'],
-    collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}']
+    collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}', '!src/index.ts']
 };
