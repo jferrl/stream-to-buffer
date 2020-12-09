@@ -1,0 +1,12 @@
+{
+    "name": "stream-to-buffer-example",
+    "version": "1.0.0",
+    "description": "@jorgeferrero/stream-to-buffer example",
+    "main": "index.js",
+    "type": "module",
+    "author": "jferrl",
+    "license": "MIT",
+    "dependencies": {
+        "@jorgeferrero/stream-to-buffer": "^2.0.4"
+    }
+}
