@@ -17,9 +17,11 @@ npm i @jorgeferrero/stream-to-buffer
 ## Usage
 
 ```typescript
-import { streamToBuffer } from 'stream-to-buffer';
-const readStream = fs.createReadStream('./file');
-const content = await streamToBuffer(readStream);
+import { streamToBuffer } from '@jorgeferrero/stream-to-buffer';
+import * as fs from 'fs';
+
+const data = await streamToBuffer(fs.createReadStream('./file'));
+console.log(data.toString());
 ```
 
 ```sh
