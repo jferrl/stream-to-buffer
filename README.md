@@ -11,7 +11,7 @@ A promise based Node.js package that converts a Node.js Readable to buffer
 ## Installation
 
 ```sh
-npm i stream-to-buffer
+npm i @jorgeferrero/stream-to-buffer
 ```
 
 ## Usage
