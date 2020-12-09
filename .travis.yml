@@ -1,7 +1,5 @@
 language: node_js
 node_js:
-    - '10'
-    - '11'
     - '12'
     - '13'
     - '14'
@@ -17,6 +15,15 @@ before_script:
     - ./cc-test-reporter before-build
 script:
     - npm run test
-    - npm run build
 after_script:
     - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+
+before_deploy:
+    - npm run build
+deploy:
+    provider: npm
+    email: $NPM_EMAIL
+    api_key: $NPM_API_TOKEN
+    skip_cleanup: $TRAVIS_TEST_RESULT
+    on:
+        branch: master
