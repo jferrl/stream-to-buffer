@@ -2,7 +2,7 @@ import { BufferableStream } from '../lib/buffer-stream';
 
 describe('BufferableStream', (): void => {
     describe('toBuffer', (): void => {
-        it('should return content of the stream as a buffer', async (): Promise<void> => {
+        it('should return the writed content as a Buffer', async (): Promise<void> => {
             const firstChuck = Buffer.from('test_data');
             const lastChunck = Buffer.from('\n');
             const sut = new BufferableStream();
