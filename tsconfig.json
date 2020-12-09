@@ -8,7 +8,7 @@
         "noImplicitAny": false,
         "moduleResolution": "node",
         "sourceMap": true,
-        "outDir": "dist",
+        "outDir": "./dist",
         "baseUrl": ".",
         "removeComments": true,
         "forceConsistentCasingInFileNames": true,
