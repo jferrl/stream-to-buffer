@@ -5,7 +5,8 @@
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "directories": {
-        "lib": "lib"
+        "lib": "lib",
+        "test": "test"
     },
     "scripts": {
         "start": "npm run build && node dist/index.js",

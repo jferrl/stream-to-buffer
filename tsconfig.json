@@ -22,9 +22,9 @@
         "noFallthroughCasesInSwitch": true,
         "lib": ["es2017", "es7", "es6", "dom"],
         "paths": {
-            "*": ["node_modules/*", "src/types/*"]
+            "*": ["node_modules/*", "lib/types/*"]
         }
     },
-    "include": ["src/**/*"],
+    "include": ["lib/**/*"],
     "exclude": ["node_modules", "bin", "**/__mocks__*", "**/*.spec.**", "test", "assets", "dist"]
 }

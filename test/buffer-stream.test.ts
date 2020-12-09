@@ -1,4 +1,4 @@
-import { BufferableStream } from '../src/buffer-stream';
+import { BufferableStream } from '../lib/buffer-stream';
 
 describe('BufferableStream', (): void => {
     describe('toBuffer', (): void => {

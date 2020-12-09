@@ -8,9 +8,9 @@ module.exports = {
     transform: {
         '^.+\\.(ts|tsx)$': 'ts-jest'
     },
-    testMatch: ['**/tests/**/*.test.(ts|js)'],
+    testMatch: ['**/test/**/*.test.(ts|js)'],
     testEnvironment: 'node',
     collectCoverage: true,
     coverageReporters: ['lcov'],
-    collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}', '!src/index.ts']
+    collectCoverageFrom: ['lib/**/*.{js,jsx,ts,tsx}', '!lib/index.ts']
 };
