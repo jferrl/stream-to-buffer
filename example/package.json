@@ -7,6 +7,6 @@
     "author": "jferrl",
     "license": "MIT",
     "dependencies": {
-        "@jorgeferrero/stream-to-buffer": "^2.0.4"
+        "@jorgeferrero/stream-to-buffer": "^2.0.5"
     }
 }
