@@ -1,40 +1,41 @@
 {
-  "name": "@jorgeferrero/stream-to-buffer",
-  "version": "1.0.0",
-  "description": "A promise based npm package that converts a node.js ReadStream to buffer",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "directories": {
-    "lib": "lib"
-  },
-  "scripts": {
-    "build": "tsc",
-    "cover": "istanbul cover node_modules/mocha/bin/_mocha test/*.js - - -R spec"
-  },
-  "keywords": [
-    "typescript",
-    "node",
-    "streaming"
-  ],
-  "author": "Jorge Ferrero Linacero <jorgeferrerolinacero@gmail.com | jorge.ferreero.linacero@hp.com>",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jferrl/stream-to-buffer.git"
-  },
-  "bugs": {
-    "url": "https://github.com/jferrl/stream-to-buffer/issues"
-  },
-  "homepage": "https://github.com/jferrl/stream-to-buffer#readme",
-  "devDependencies": {
-    "@types/node": "^10.12.10",
-    "chai": "^4.2.0",
-    "coveralls": "^3.0.2",
-    "istanbul": "^0.4.5",
-    "mocha": "^5.2.0",
-    "typescript": "^3.1.6"
-  },
-  "dependencies": {
-    "memorystream": "^0.3.1"
-  }
+    "name": "@jorgeferrero/stream-to-buffer",
+    "version": "2.0.0",
+    "description": "A promise based npm package that converts a node.js ReadStream to buffer",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "directories": {
+        "lib": "lib"
+    },
+    "scripts": {
+        "start": "npm run build && node dist/index.js",
+        "build": "npm run build-ts",
+        "build-ts": "tsc",
+        "test": "jest --forceExit --verbose --detectOpenHandles",
+        "watch-test": "npm run test -- --watchAll"
+    },
+    "keywords": [
+        "typescript",
+        "node.js",
+        "streaming"
+    ],
+    "author": "Jorge Ferrero Linacero <jorgeferrerolinacero@gmail.com | jorge.ferreero.linacero@hp.com>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jferrl/stream-to-buffer.git"
+    },
+    "bugs": {
+        "url": "https://github.com/jferrl/stream-to-buffer/issues"
+    },
+    "homepage": "https://github.com/jferrl/stream-to-buffer#readme",
+    "devDependencies": {
+        "@types/jest": "^25.2.1",
+        "@types/node": "^13.13.5",
+        "jest": "^26.0.1",
+        "ts-jest": "^25.5.0",
+        "tslint": "^6.1.2",
+        "tslint-config-prettier": "^1.18.0",
+        "typescript": "^3.8.3"
+    }
 }
