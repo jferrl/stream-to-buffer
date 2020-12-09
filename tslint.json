@@ -1,55 +1,98 @@
 {
+    "extends": ["tslint:latest", "tslint-config-prettier"],
+    "linterOptions": {
+        "exclude": ["node_modules"]
+    },
     "rules": {
-        "class-name": true,
-        "comment-format": [
-            true,
-            "check-space"
-        ],
-        "indent": [
-            true,
-            "spaces"
-        ],
-        "no-duplicate-variable": true,
-        "no-eval": true,
-        "no-internal-module": true,
-        "no-trailing-whitespace": true,
-        "no-var-keyword": true,
-        "one-line": [
-            true,
-            "check-open-brace",
-            "check-whitespace"
-        ],
-        "ordered-imports": true,
-        "quotemark": [
-            true,
-            "double"
-        ],
-        "semicolon": true,
-        "triple-equals": [
-            true,
-            "allow-null-check"
-        ],
-        "typedef-whitespace": [
+        "align": [true, "parameters", "statements", "members", "elements"],
+        "arrow-parens": [true, "ban-single-arg-parens"],
+        "await-promise": true,
+        "binary-expression-operand-order": true,
+        "curly": [true, "ignore-same-line"],
+        "cyclomatic-complexity": [true, 6],
+        "deprecation": true,
+        "interface-name": [true, "never-prefix"],
+        "match-default-export-name": true,
+        "member-access": [true, "no-public"],
+        "member-ordering": [
             true,
             {
-                "call-signature": "nospace",
-                "index-signature": "nospace",
-                "parameter": "nospace",
-                "property-declaration": "nospace",
-                "variable-declaration": "nospace"
+                "order": [
+                    "public-static-field",
+                    "protected-static-field",
+                    "private-static-field",
+                    "public-instance-field",
+                    "protected-instance-field",
+                    "private-instance-field",
+                    "public-static-method",
+                    "protected-static-method",
+                    "private-static-method",
+                    "public-constructor",
+                    "protected-constructor",
+                    "private-constructor"
+                ]
             }
         ],
-        "variable-name": [
+        "newline-before-return": false,
+        "no-boolean-literal-compare": true,
+        "no-implicit-dependencies": [true, "dev"],
+        "no-floating-promises": true,
+        "no-for-in-array": true,
+        "no-inferred-empty-object-type": true,
+        "no-irregular-whitespace": true,
+        "no-magic-numbers": false,
+        "no-mergeable-namespace": true,
+        "no-non-null-assertion": true,
+        "no-parameter-reassignment": true,
+        "no-submodule-imports": false,
+        "no-switch-case-fall-through": true,
+        "no-unbound-method": [true, "ignore-static"],
+        "no-unnecessary-callback-wrapper": true,
+        "no-unnecessary-qualifier": true,
+        "no-unused-expression": [true, "allow-fast-null-checks"],
+        "no-void-expression": true,
+        "number-literal-format": true,
+        "object-literal-key-quotes": [true, "as-needed"],
+        "object-literal-sort-keys": [true, "match-declaration-order"],
+        "ordered-imports": [
             true,
-            "ban-keywords"
+            {
+                "import-sources-order": "lowercase-first",
+                "grouped-imports": true,
+                "named-imports-order": "lowercase-first",
+                "module-source-path": "full"
+            }
         ],
-        "whitespace": [
+        "prefer-function-over-method": [true, "allow-public"],
+        "prefer-method-signature": true,
+        "prefer-readonly": true,
+        "prefer-switch": true,
+        "prefer-template": true,
+        "prefer-while": true,
+        "promise-function-async": true,
+        "quotemark": [true, "single", "avoid-escape", "avoid-template", "jsx-double"],
+        "radix": true,
+        "restrict-plus-operands": true,
+        "trailing-comma": [
             true,
-            "check-branch",
-            "check-decl",
-            "check-operator",
-            "check-separator",
-            "check-type"
-        ]
+            {
+                "multiline": "never",
+                "singleline": "never",
+                "esSpecCompliant": true
+            }
+        ],
+        "triple-equals": [true, "allow-null-check", "allow-undefined-check"],
+        "typedef": [
+            true,
+            "call-signature",
+            "arrow-call-signature",
+            "parameter",
+            "arrow-parameter",
+            "property-declaration",
+            "member-variable-declaration",
+            "array-destructuring"
+        ],
+        "type-literal-delimiter": true,
+        "use-default-type-parameter": true
     }
 }
