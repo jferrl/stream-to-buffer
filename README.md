@@ -1,7 +1,8 @@
 # StreamToBuffer
 
 [![Build Status](https://travis-ci.org/jferrl/stream-to-buffer.svg?branch=master)](https://travis-ci.org/jferrl/stream-to-buffer)
-[![Coverage Status](https://coveralls.io/repos/github/jferrl/stream-to-buffer/badge.svg?branch=master)](https://coveralls.io/github/jferrl/stream-to-buffer?branch=master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/71b14075a12d34b2efbc/maintainability)](https://codeclimate.com/github/jferrl/stream-to-buffer/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/71b14075a12d34b2efbc/test_coverage)](https://codeclimate.com/github/jferrl/stream-to-buffer/test_coverage)
 
 A promise based Node.js module that converts a node.js ReadStream to buffer
 
